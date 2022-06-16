@@ -1,0 +1,243 @@
+            body{
+				margin:0px;
+				padding: 0px;
+			}
+			a{
+				text-decoration: none;
+				transition: 1s;
+				cursor: pointer;
+			}
+			a:hover{
+				text-decoration: underline;
+				color: blue;
+				font-weight: bold;
+				transition: 1s;
+			}
+			span{
+				font-size: 10px;
+				color: grey;
+				font-weight: 600;
+			}
+			span.commentspan{
+				font-size: 13px;
+				color: grey;
+			}
+			footer{
+				background-color: linear-gradient (90deg,rgb(216, 216, 216),grey);
+				width: 93vw;
+				height: 10%;
+				margin-top: 50px;
+				padding: 20px;
+				text-align: center;
+				align-items: center;
+				justify-content: center;
+			}
+			nav{
+				background-color: white;
+				display: flex;
+				height:8vh;
+				width: 100vw;
+				max-height: 50px;
+				padding: 5px 10px 5px 10px;
+				box-shadow: 0px 4px 10px 0px rgb(230,230,230);
+				text-align: center;
+				align-items: center;
+				margin-bottom: 20px;
+				position: fixed;
+				top: 0;
+				z-index: 100;
+			}
+			.handbook{
+				color: blue;
+				justify-content: flex-start;
+				font-size: 1.2em;
+				float: left;
+			}
+			.navtools {
+				display: flex;
+				width: 24%;
+				height: 30px;
+				position: absolute;
+				top: 7px;
+				margin-top: 0px;
+				text-align: right;
+				align-items: center;
+				justify-content: center;
+				margin-right: 2vw;
+				margin-left: 50vw;
+				background-color: white;
+				border-radius: 20px;
+				border: 1px solid cyan;
+				padding:  5px;
+				transition: 0.2s;
+			}
+			.navtools:hover{
+				border: 1px solid blue;
+				transition: 0.5s;
+			}
+			.searchform{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				position: absolute;
+				top: 5px;
+			}
+			.navtools input{
+				position: relative;
+				outline: none;
+				border-radius: 15px;
+				border:  0px solid grey;
+				padding: 5px;
+				width: 85%;
+			}
+			.navtools img{
+                width: 20px;
+				position: relative;
+				margin-right: 5px;
+			}
+			.littlethings{
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				float: right;
+				height: 6vh;
+				padding: 0px 5px;
+				width: 300px;
+				position: absolute;
+				left: calc(calc(50vw + 28%) - 120px);
+				background-color: transparent;
+			}
+			.extras{
+				width: 40%;
+				border: 0px solid black;
+				height: inherit;
+				align-items: center;
+				justify-content: space-around;
+				list-style-type: none;
+			}
+			li{
+				float: left;
+			}
+			.extras img{
+				position: relative;
+				top: -5px;
+				width: 20px;
+				height: auto;
+				margin: 10px;
+			}
+			.entire_notificationopen{
+				min-height: 400px;
+				padding: 0px 10px;
+			}
+			.entire_notification{		
+				border-radius: 10px;
+				position: fixed;
+				overflow: scroll;
+				top: 72px;
+				width: 370px;
+				height: 0px;
+				display: flex;
+				flex-direction: column;
+				left: 65vw;
+				padding: 0px 10px;
+				box-sizing: border-box;
+				background-color: #fff;
+				box-shadow: 0px 0px 20px rgb(230,230,230);
+				z-index: 999;
+				transition: min-height 0.7s;
+			}
+
+			.a_notif{
+				display: flex;
+				padding: 5px 0px;
+				margin-bottom: 10px;
+				justify-content: center;
+				width: 100%;
+				height: fit-content;
+				border-bottom: 1px solid #b9b0b1;
+			}
+			.icon{
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				background-color: yellow;
+				margin-right: 10px;
+			}
+			.details{
+				width: calc(100% - 60px);
+				padding-right: 10px;
+			}
+			.profilepic{
+				position: absolute;
+				top: 5px;
+				left: 90%;
+				float: right;
+				border-radius: 50%;
+				height: 50px;
+				width: 50px;
+				background-color: blue;
+				background-image: url(graphics/my_portrait.jpg);
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				margin-right: 10px;
+				cursor: pointer;
+			}
+			.settingsdropdown{
+				border-radius: 10px;
+				position: fixed;
+				overflow: hidden;
+				top: 72px;
+				left: 71%;
+				width: 28%;
+				max-height: 0;
+				box-sizing: border-box;
+				padding: 0px 10px;
+				background-color: #fff;
+				box-shadow: 0px 0px 20px rgb(230,230,230);
+				z-index: 999;
+				transition: max-height 0.3s;
+			}
+			.settingsdropdownopen{
+				max-height: 350px;
+				padding: 10px 10px;
+			}
+			.settingsdropdown.profilepic .dropdown{
+				width: 30px;
+				height: 30px;
+				background-image:  url(graphics/my_portrait.jpg);
+				background-position: center;
+				background-size: cover;
+			} 
+			.aindropdown{
+				display: flex;
+				width: 100%;
+				height: fit-content;
+				align-items: center;
+				justify-content: center;
+				border-bottom: 1px solid grey;
+			}
+			.bindropdown, .cindropdown, .dindropdown, .eindropdown{
+				position: relative;
+				align-items: center;
+				height: 45px;
+				justify-content: center;
+				border-bottom: 1px solid grey;
+				padding: 5px 10px;
+				align-content: center;
+				text-align: left;
+				vertical-align: middle;
+			}
+            .profilepicdropdown{
+				float: left;
+				width: 65px;
+				height: 65px; 
+				background-color: #fff;
+				background-image: url(graphics/profile_default.png);
+				background-position: center;
+				background-size: cover;
+				margin-right: 10px;
+				margin-left: 5px;
+				border-radius: 50% ;
+			}
